@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-jul-2018 4:01:11 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="Modelo.Cliente" table="cliente" catalog="sport5000">
+        <id name="email" type="string">
+            <column name="email" length="45" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="45" not-null="true" />
+        </property>
+        <property name="apellidos" type="string">
+            <column name="Apellidos" length="45" not-null="true" />
+        </property>
+        <property name="dni" type="string">
+            <column name="DNI" length="45" not-null="true" />
+        </property>
+        <property name="direcci&#243;n" type="string">
+            <column name="Direcci&#243;n" length="45" not-null="true" />
+        </property>
+        <property name="contrase&#241;a" type="string">
+            <column name="Contrase&#241;a" length="45" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="Telefono" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
