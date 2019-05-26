@@ -677,52 +677,52 @@ public class ventanaCliente extends JFrame {
 		contentPane.add(comprar12);
 		
 		JLabel label_22 = new JLabel("New label");
-		label_22.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Balon Atletico.jpg"));
+		label_22.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Balon Atletico.jpg"));
 		label_22.setBounds(330, 70, 89, 110);
 		contentPane.add(label_22);
 		
 		JLabel label_23 = new JLabel("New label");
-		label_23.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Balon madrid.jpg"));
+		label_23.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Balon Madrid.jpg"));
 		label_23.setBounds(470, 70, 89, 110);
 		contentPane.add(label_23);
 		
 		JLabel label_24 = new JLabel("New label");
-		label_24.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Tabla Batman.jpg"));
+		label_24.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Tabla Batman.jpg"));
 		label_24.setBounds(50, 334, 89, 110);
 		contentPane.add(label_24);
 		
 		JLabel label_25 = new JLabel("New label");
-		label_25.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Tabla Wonder.jpg"));
+		label_25.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Tabla Wonder.jpg"));
 		label_25.setBounds(190, 334, 89, 110);
 		contentPane.add(label_25);
 		
 		JLabel label_26 = new JLabel("New label");
-		label_26.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Chaqueta Adidas.jpg"));
+		label_26.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Chaqueta Adidas.jpg"));
 		label_26.setBounds(330, 334, 89, 110);
 		contentPane.add(label_26);
 		
 		JLabel label_27 = new JLabel("New label");
-		label_27.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Chaqueta Adidas2.jpg"));
+		label_27.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Chaqueta Adidas2.jpg"));
 		label_27.setBounds(463, 334, 89, 110);
 		contentPane.add(label_27);
 		
 		JLabel label_28 = new JLabel("New label");
-		label_28.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Pantalon Corto Adidas.jpg"));
+		label_28.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Pantalon Corto Adidas.jpg"));
 		label_28.setBounds(50, 599, 89, 110);
 		contentPane.add(label_28);
 		
 		JLabel label_29 = new JLabel("New label");
-		label_29.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Pantalon Nike.jpg"));
+		label_29.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Pantalon Nike.jpg"));
 		label_29.setBounds(190, 599, 89, 110);
 		contentPane.add(label_29);
 		
 		JLabel label_30 = new JLabel("New label");
-		label_30.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Zapas Nike.jpg"));
+		label_30.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Zapas Nike.jpg"));
 		label_30.setBounds(330, 599, 89, 110);
 		contentPane.add(label_30);
 		
 		JLabel label_31 = new JLabel("New label");
-		label_31.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Zapatillas Nike Cortez.jpg"));
+		label_31.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Zapatillas Nike Cortez.jpg"));
 		label_31.setBounds(470, 599, 89, 110);
 		contentPane.add(label_31);
 		
@@ -820,12 +820,12 @@ public class ventanaCliente extends JFrame {
 		contentPane.add(comprar8);
 		
 		JLabel label = new JLabel("New label");
-		label.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Raqueta 1.jpg"));
+		label.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Raqueta 1.jpg"));
 		label.setBounds(50, 70, 89, 110);
 		contentPane.add(label);
 		
 		JLabel label_1 = new JLabel("New label");
-		label_1.setIcon(new ImageIcon("C:\\Users\\Gonzalo\\workspace\\Inso1\\Fotos\\Raqueta Head Instinct.jpg"));
+		label_1.setIcon(new ImageIcon("C:\\Users\\Jonathan\\workspace\\Sport5000.Inso2.zip_expanded\\Fotos\\Raqueta Head Instinct.jpg"));
 		label_1.setBounds(190, 70, 89, 110);
 		contentPane.add(label_1);
 		
