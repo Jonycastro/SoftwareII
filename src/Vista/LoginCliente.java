@@ -100,13 +100,13 @@ public class LoginCliente extends JFrame {
 		lblBienvenidoASport.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		defaultt.add(lblBienvenidoASport);
 		
-		JLabel lblRelleneElSiguiente = new JLabel("Rellene el siguiente formulario para su inscripci\u00F3n:");
-		lblRelleneElSiguiente.setBounds(40, 71, 268, 15);
+		JLabel lblRelleneElSiguiente = new JLabel("Rellene los siguientes datos para registrarse:");
+		lblRelleneElSiguiente.setBounds(40, 86, 268, 15);
 		lblRelleneElSiguiente.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		defaultt.add(lblRelleneElSiguiente);
 		
 		JLabel lblNombre = new JLabel("Nombre*:");
-		lblNombre.setBounds(40, 133, 65, 14);
+		lblNombre.setBounds(29, 133, 65, 14);
 		defaultt.add(lblNombre);
 		
 		nombreCliente = new JTextField();
@@ -115,7 +115,7 @@ public class LoginCliente extends JFrame {
 		nombreCliente.setColumns(10);
 		
 		JLabel lblApellidos = new JLabel("Apellidos*:");
-		lblApellidos.setBounds(40, 164, 65, 14);
+		lblApellidos.setBounds(29, 164, 65, 14);
 		defaultt.add(lblApellidos);
 		
 		apellidosCliente = new JTextField();
@@ -124,7 +124,7 @@ public class LoginCliente extends JFrame {
 		apellidosCliente.setColumns(10);
 		
 		JLabel lblDireccin = new JLabel("DNI* :");
-		lblDireccin.setBounds(40, 195, 56, 14);
+		lblDireccin.setBounds(29, 195, 56, 14);
 		defaultt.add(lblDireccin);
 		
 		dniCliente = new JTextField();
@@ -133,7 +133,7 @@ public class LoginCliente extends JFrame {
 		dniCliente.setColumns(10);
 		
 		JLabel lblNewLabel = new JLabel("E-mail*:");
-		lblNewLabel.setBounds(40, 226, 65, 14);
+		lblNewLabel.setBounds(29, 226, 65, 14);
 		defaultt.add(lblNewLabel);
 		
 		correoCliente = new JTextField();
@@ -151,19 +151,19 @@ public class LoginCliente extends JFrame {
 		defaultt.add(passCliente);
 		
 		JLabel lblContrasea = new JLabel("Contrase\u00F1a*:");
-		lblContrasea.setBounds(40, 257, 75, 14);
+		lblContrasea.setBounds(29, 257, 86, 14);
 		defaultt.add(lblContrasea);
 		
 		lblDireccion = new JLabel("Direcci\u00F3n*:");
-		lblDireccion.setBounds(40, 319, 65, 14);
+		lblDireccion.setBounds(29, 316, 65, 17);
 		defaultt.add(lblDireccion);
 		
 		lblTelfono = new JLabel("Tel\u00E9fono:");
-		lblTelfono.setBounds(40, 350, 65, 14);
+		lblTelfono.setBounds(29, 346, 65, 14);
 		defaultt.add(lblTelfono);
 		
 		lbllosCamposMarcados = new JLabel("(Los campos marcados con * son obligatorios)");
-		lbllosCamposMarcados.setBounds(40, 96, 268, 14);
+		lbllosCamposMarcados.setBounds(50, 378, 268, 14);
 		defaultt.add(lbllosCamposMarcados);
 		
 		btnRegistrarse = new JButton("Registrarse");
@@ -241,7 +241,7 @@ public class LoginCliente extends JFrame {
 				
 			
 		});
-		btnRegistrarse.setBounds(40, 387, 135, 35);
+		btnRegistrarse.setBounds(40, 405, 135, 35);
 		defaultt.add(btnRegistrarse);
 		
 		btnYaTengoCuenta = new JButton("Ya tengo cuenta");
@@ -253,7 +253,7 @@ public class LoginCliente extends JFrame {
 				dispose();
 			}
 		});
-		btnYaTengoCuenta.setBounds(199, 387, 133, 35);
+		btnYaTengoCuenta.setBounds(199, 405, 133, 35);
 		defaultt.add(btnYaTengoCuenta);
 		
 		telefonoCliente = new JTextField();
@@ -262,7 +262,7 @@ public class LoginCliente extends JFrame {
 		telefonoCliente.setColumns(10);
 		
 		lblContrasea_1 = new JLabel("Contrase\u00F1a*:");
-		lblContrasea_1.setBounds(40, 288, 75, 14);
+		lblContrasea_1.setBounds(29, 284, 86, 22);
 		defaultt.add(lblContrasea_1);
 		
 		pass1Cliente = new JPasswordField();

@@ -65,7 +65,7 @@ public class LoginComun extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblIntroduzcaSuCorreo = new JLabel("Introduzca su correo electr\u00F3nico y usuario:");
+		JLabel lblIntroduzcaSuCorreo = new JLabel("Introduzca su correo electr\u00F3nico y contrase\u00F1a:");
 		lblIntroduzcaSuCorreo.setBounds(35, 40, 310, 14);
 		lblIntroduzcaSuCorreo.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		contentPane.add(lblIntroduzcaSuCorreo);

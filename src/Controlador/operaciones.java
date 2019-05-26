@@ -30,6 +30,22 @@ import Vista.verClientes;
 
 public class operaciones {
 	
+	public static void altaProductos(Productos pro){
+		
+		Session session;
+		
+		session = inicioHibernate.getSessionFactory().openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(pro);
+		
+		
+		tx.commit();
+		session.close();
+		JOptionPane.showMessageDialog(null, "El producto ha sido registrado correctamente");
+	
+		
+	}
+	
 	public static void altaUsuario(Cliente user){
 		
 		Session session;
@@ -42,6 +58,28 @@ public class operaciones {
 		tx.commit();
 		session.close();
 		JOptionPane.showMessageDialog(null, "El cliente ha sido registrado correctamente");
+	}
+	public static void actualizarProductos(Productos pro){
+		
+		Session session;
+		
+		session = inicioHibernate.getSessionFactory().openSession();
+		Transaction tx = session.beginTransaction();
+		
+		String hql = "UPDATE Productos set  Nombre = :nombre, Precio = :precio, Stock = :stock  WHERE nombre = :nombre,";
+		Query query = session.createQuery(hql);
+		query.setParameter("nombre",pro.getNombre());
+		query.setParameter("precio",pro.getPrecio());
+		query.setParameter("stock",pro.getStock());
+		
+		//query.setParameter("customerId",3);
+		 
+		int affectedRows = query.executeUpdate();
+		
+		tx.commit();
+		session.close();
+		JOptionPane.showMessageDialog(null, "El producto ha sido actualizado correctamente");
+		
 	}
 	
 	public static void actualizarUsuario(Cliente user){
@@ -82,6 +120,20 @@ public class operaciones {
 		JOptionPane.showMessageDialog(null, "El cliente ha sido eliminado correctamente");
 		
 	}
+	public static void bajaProducto(Productos pro){
+		
+		Session session;
+		
+		session = inicioHibernate.getSessionFactory().openSession();
+		Transaction tx = session.beginTransaction();
+		session.delete(pro);
+		
+		tx.commit();
+		session.close();
+		JOptionPane.showMessageDialog(null, "El producto ha sido eliminado correctamente");
+		
+	}
+	
 	
 	public static void altaAdministrador(String email,String contraseña){
 		
@@ -147,12 +199,41 @@ public class operaciones {
 				
 			}
 			
+			
 		}
 		
 		
 
 		System.out.println(resultado);
 		return resultado;
+		
+	}
+
+	public static int yaExisteProducto(String nombre){
+		
+		int contador = 0;
+		
+		Session session;
+		
+		session = inicioHibernate.getSessionFactory().openSession();
+		Transaction tx = session.beginTransaction();
+		
+		Query query = session.createQuery("from Productos where nombre = :nombre");
+		query.setParameter("nombre", nombre);
+		
+		List<Productos> list = (List<Productos>) query.list();
+		
+		tx.commit();
+		session.close();
+		
+		if(list.size() >0){
+			
+			contador = 1;
+			return contador;
+		}
+		System.out.println(contador);
+		return contador;
+		
 		
 	}
 	
@@ -385,7 +466,35 @@ public static String precioActual(){
 	}
 	
 	
+	public static ArrayList<Productos> getListaProductos(){
+			
+		try{
+			Productos pro;
+			Session session;
+			
+			session = inicioHibernate.getSessionFactory().openSession();
+			Transaction tx = session.beginTransaction();
+			
+			String hql = "FROM Productos";
+			Query query = session.createQuery(hql);
+			List results = query.list();
+			
+			
+			for(int i=0;i<results.size();i++){
+					
+			}
+			
+			tx.commit();
+			session.close();
+			return (ArrayList<Productos>) results;
+		}catch(Exception e){
+			JOptionPane.showMessageDialog(null, e);
+			
+					
+		}
+		return null;
 	
+	}
 	public static ArrayList<Cliente> getListaClientes(){
 		
 		//ArrayList <Clientes> listaClientes =  new ArrayList<Clientes>();

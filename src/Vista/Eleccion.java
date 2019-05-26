@@ -49,7 +49,7 @@ public class Eleccion extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblInicieSesinComo = new JLabel("Inicie sesi\u00F3n como:");
-		lblInicieSesinComo.setBounds(37, 37, 116, 14);
+		lblInicieSesinComo.setBounds(37, 37, 149, 14);
 		contentPane.add(lblInicieSesinComo);
 		
 		JButton btnAdministrador = new JButton("Administrador");

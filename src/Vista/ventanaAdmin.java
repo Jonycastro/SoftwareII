@@ -22,6 +22,8 @@ public class ventanaAdmin extends JFrame {
 	final verClientes verClie = new verClientes();
 	
 	final gestionarOfertas gestOfer = new gestionarOfertas();
+	
+	final verProductos gestPro = new verProductos();
 	/**
 	 * Launch the application.
 	 */
@@ -68,15 +70,26 @@ public class ventanaAdmin extends JFrame {
 		btnVerClientes.setBounds(43, 89, 145, 70);
 		contentPane.add(btnVerClientes);
 		
-		JButton btnGestionarProductos = new JButton("Gestionar ofertas");
-		btnGestionarProductos.addActionListener(new ActionListener() {
+		JButton btnGestionarOfertas = new JButton("Gestionar ofertas");
+		btnGestionarOfertas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				gestOfer.setVisible(true);;
 				dispose();
 			}
 		});
-		btnGestionarProductos.setBounds(240, 89, 145, 70);
+		btnGestionarOfertas.setBounds(240, 89, 145, 70);
+		contentPane.add(btnGestionarOfertas);
+		
+		JButton btnGestionarProductos = new JButton("Gestionar productos");
+		btnGestionarProductos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				gestPro.setVisible(true);;
+				dispose();
+			}
+		});
+		btnGestionarProductos.setBounds(119, 184, 167, 38);
 		contentPane.add(btnGestionarProductos);
 	}
 }
